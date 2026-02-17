@@ -1,17 +1,16 @@
 ---
-import '@fontsource-variable/noto-sans-thai';
-import '@fontsource-variable/inter';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="th">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SMEAI</title>
-	</head>
-	<body class="bg-surface-50 text-surface-900 font-sans antialiased">
-		<div class="min-h-screen flex items-center justify-center">
-			<h1 class="text-4xl font-bold text-primary-600">SMEAI</h1>
-		</div>
-	</body>
-</html>
+<BaseLayout title="Home">
+	<section class="prose-container py-20">
+		<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-4">
+			AI สำหรับ SME ไทย
+		</h1>
+		<p class="text-lg text-surface-600 dark:text-surface-400 leading-relaxed">
+			เรียนรู้การนำ AI มาใช้ในธุรกิจ SME อย่างคุ้มค่า พร้อมตัวอย่างจริงและคำปรึกษาจากผู้เชี่ยวชาญ
+		</p>
+		<p class="mt-8 text-sm text-surface-400 dark:text-surface-500 italic">
+			Site is under construction. Content coming soon.
+		</p>
+	</section>
+</BaseLayout>
