@@ -5,33 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 1 - Foundation & Site Shell
+**Current focus:** Phase 1 complete -- ready for Phase 2
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation & Site Shell)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-02-18 -- Completed 01-01 (Project Setup & Design System)
+Phase: 1 of 6 (Foundation & Site Shell) -- COMPLETE
+Plan: 2 of 2 in current phase (all done)
+Status: Phase Complete
+Last activity: 2026-02-18 -- Completed 01-02 (Layout Shell & Deployment)
 
-Progress: [█░░░░░░░░░] 8%
+Progress: [██░░░░░░░░] 17%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 7min
-- Total execution time: 0.12 hours
+- Total plans completed: 2
+- Average duration: 5.5min
+- Total execution time: 0.18 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1 | 7min | 7min |
+| 01-foundation | 2 | 11min | 5.5min |
 
 **Recent Trend:**
-- Last 5 plans: 7min
-- Trend: baseline
+- Last 5 plans: 7min, 4min
+- Trend: improving
 
 *Updated after each plan completion*
 
@@ -48,17 +48,20 @@ Recent decisions affecting current work:
 - [01-01]: Biome v2.4 schema differs significantly from v2.0 -- uses css.parser.tailwindDirectives, assist.actions.source for organizeImports
 - [01-01]: Manual project scaffold needed when .planning/ exists (create-astro rejects non-empty dirs)
 - [01-01]: Biome file includes scoped to src/** plus root configs to avoid linting generated .astro/ types
+- [01-02]: Component scripts use astro:after-swap for view transitions compatibility
+- [01-02]: Heroicons SVGs inlined directly (no icon library dependency)
+- [01-02]: GitHub repo created as public at mingrath/smeai, pushed to main
 
 ### Pending Todos
 
-None yet.
+- Cloudflare Pages dashboard setup (manual): connect mingrath/smeai repo, set build config, enable Web Analytics
 
 ### Blockers/Concerns
 
-None yet.
+None.
 
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 01-01-PLAN.md, ready for 01-02
+Stopped at: Completed 01-02-PLAN.md -- Phase 1 complete, ready for Phase 2
 Resume file: None
