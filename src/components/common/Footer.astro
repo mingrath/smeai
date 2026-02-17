@@ -1,0 +1,16 @@
+---
+import ContactLinks from './ContactLinks.astro';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-surface-200 dark:border-surface-800">
+	<div class="max-w-5xl mx-auto px-4 py-6">
+		<div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+			<p class="text-sm text-surface-500 dark:text-surface-400">
+				&copy; {currentYear} SMEAI
+			</p>
+			<ContactLinks variant="full" />
+		</div>
+	</div>
+</footer>
