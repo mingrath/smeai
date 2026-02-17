@@ -28,14 +28,14 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Success Criteria** (what must be TRUE):
   1. Site is live on Cloudflare Pages and auto-deploys from GitHub on push to main
   2. Every page renders correctly on a mid-range Android phone (mobile-first responsive layout)
-  3. Contact links (LINE, email, phone) are accessible from header or footer on every page
+  3. Contact links (LINE, email) are accessible from header or footer on every page
   4. Thai text renders with self-hosted Noto Sans Thai + Inter fonts at proper line-height
   5. Cloudflare Analytics is collecting pageview data (cookieless, PDPA-compliant)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Project Setup & Design System
+- [ ] 01-02-PLAN.md -- Layout Shell & Deployment
 
 ### Phase 2: Landing Page & Contact
 **Goal**: A visitor landing on the homepage understands what SMEAI offers within 5 seconds, learns about Ohm's background, and can reach a dedicated contact page
@@ -118,7 +118,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Site Shell | 0/TBD | Not started | - |
+| 1. Foundation & Site Shell | 0/2 | Planned | - |
 | 2. Landing Page & Contact | 0/TBD | Not started | - |
 | 3. Content System & Articles | 0/TBD | Not started | - |
 | 4. Project Showcase | 0/TBD | Not started | - |
