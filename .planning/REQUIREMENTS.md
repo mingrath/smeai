@@ -1,7 +1,7 @@
 # Requirements: SMEAI
 
 **Defined:** 2026-02-17
-**Core Value:** SME owners can discover practical, cost-effective AI solutions they can actually use — and reach Ohm when they need help implementing them.
+**Core Value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
 
 ## v1 Requirements
 
@@ -97,7 +97,7 @@ Deferred to future release. Tracked but not in current roadmap.
 | E-commerce / payment processing | Consulting handled offline via LINE/phone |
 | Booking / calendar system | Thai business culture prefers LINE chat over self-service booking |
 | Comment system on articles | Moderation overhead, low quality comments hurt credibility. Social engagement happens on LINE/Facebook. |
-| Headless CMS (Contentful, Sanity) | Single-author site — Markdown in Git is simpler, free, version-controlled |
+| Headless CMS (Contentful, Sanity) | Single-author site -- Markdown in Git is simpler, free, version-controlled |
 | Server-side rendering / database | Static site covers all requirements. No auth, no dynamic data. |
 | AI chatbot on the site | Expensive to maintain quality. Bad chatbot damages credibility more than no chatbot. |
 | Gated content (email for downloads) | Thai market shows low tolerance for gated content. Hurts SEO. |
@@ -109,42 +109,42 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAND-01 | — | Pending |
-| LAND-02 | — | Pending |
-| LAND-03 | — | Pending |
-| LAND-04 | — | Pending |
-| LAND-05 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| CONT-05 | — | Pending |
-| CONT-06 | — | Pending |
-| CONT-07 | — | Pending |
-| SHOW-01 | — | Pending |
-| SHOW-02 | — | Pending |
-| SHOW-03 | — | Pending |
-| SHOW-04 | — | Pending |
-| VIDE-01 | — | Pending |
-| VIDE-02 | — | Pending |
-| VIDE-03 | — | Pending |
-| LEAD-01 | — | Pending |
-| LEAD-02 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
-| SEO-05 | — | Pending |
-| SEO-06 | — | Pending |
-| SEO-07 | — | Pending |
-| SRCH-01 | — | Pending |
-| SRCH-02 | — | Pending |
+| LAND-01 | Phase 2 | Pending |
+| LAND-02 | Phase 2 | Pending |
+| LAND-03 | Phase 1 | Pending |
+| LAND-04 | Phase 2 | Pending |
+| LAND-05 | Phase 1 | Pending |
+| CONT-01 | Phase 3 | Pending |
+| CONT-02 | Phase 3 | Pending |
+| CONT-03 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Pending |
+| CONT-05 | Phase 3 | Pending |
+| CONT-06 | Phase 3 | Pending |
+| CONT-07 | Phase 3 | Pending |
+| SHOW-01 | Phase 4 | Pending |
+| SHOW-02 | Phase 4 | Pending |
+| SHOW-03 | Phase 4 | Pending |
+| SHOW-04 | Phase 4 | Pending |
+| VIDE-01 | Phase 5 | Pending |
+| VIDE-02 | Phase 5 | Pending |
+| VIDE-03 | Phase 5 | Pending |
+| LEAD-01 | Phase 2 | Pending |
+| LEAD-02 | Phase 1 | Pending |
+| SEO-01 | Phase 3 | Pending |
+| SEO-02 | Phase 3 | Pending |
+| SEO-03 | Phase 3 | Pending |
+| SEO-04 | Phase 1 | Pending |
+| SEO-05 | Phase 1 | Pending |
+| SEO-06 | Phase 6 | Pending |
+| SEO-07 | Phase 1 | Pending |
+| SRCH-01 | Phase 6 | Pending |
+| SRCH-02 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 30 total
-- Mapped to phases: 0
-- Unmapped: 30
+- Mapped to phases: 30
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-17 after initial definition*
+*Last updated: 2026-02-17 after roadmap creation*
