@@ -1,9 +1,9 @@
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
-import preact from '@astrojs/preact';
+import preact from "@astrojs/preact";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-	site: 'https://smeai.pages.dev',
+	site: "https://smeai.pages.dev",
 	integrations: [preact()],
 	vite: {
 		plugins: [tailwindcss()],
