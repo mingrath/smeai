@@ -1,0 +1,46 @@
+---
+import '@fontsource-variable/noto-sans-thai';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import Header from '../components/common/Header.astro';
+import Footer from '../components/common/Footer.astro';
+import MobileNav from '../components/common/MobileNav.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const {
+	title,
+	description = 'AI สำหรับ SME ไทย - เรียนรู้และปรึกษา',
+} = Astro.props;
+---
+<html lang="th" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<meta property="og:locale" content="th_TH" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title} | SMEAI</title>
+		<script is:inline>
+			(function () {
+				const theme = localStorage.getItem('theme');
+				if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+			})();
+		</script>
+	</head>
+	<body class="bg-surface-50 text-surface-900 dark:bg-surface-950 dark:text-surface-100 font-sans antialiased">
+		<Header />
+		<MobileNav />
+		<main class="pt-16">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
