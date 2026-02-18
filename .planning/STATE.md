@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 3 in progress -- Content System & Articles.
+**Current focus:** Phase 3 complete -- Content System & Articles. Ready for Phase 4.
 
 ## Current Position
 
-Phase: 3 of 6 (Content System & Articles)
-Plan: 2 of 3 in current phase (03-02 complete)
-Status: Executing
-Last activity: 2026-02-18 -- Completed 03-02 (Article Pages, SEO Enhancement & Layout)
+Phase: 3 of 6 (Content System & Articles) -- COMPLETE
+Plan: 3 of 3 in current phase (03-03 complete)
+Status: Phase complete
+Last activity: 2026-02-18 -- Completed 03-03 (Article Listing & Category Browsing)
 
-Progress: [██████░░░░] 50%
+Progress: [██████░░░░] 58%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 4min
-- Total execution time: 0.41 hours
+- Total plans completed: 7
+- Average duration: 3.7min
+- Total execution time: 0.43 hours
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [██████░░░░] 50%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 11min | 5.5min |
 | 02-landing-page | 2 | 5min | 2.5min |
-| 03-content-system | 2 | 8min | 4min |
+| 03-content-system | 3 | 10min | 3.3min |
 
 **Recent Trend:**
-- Last 5 plans: 2min, 3min, 4min, 4min
+- Last 5 plans: 3min, 4min, 4min, 2min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -65,6 +65,9 @@ Recent decisions affecting current work:
 - [03-02]: JSON-LD via set:html={JSON.stringify(schema)} to avoid entity escaping
 - [03-02]: TOC renders h2/h3 only, deeper headings ignored for clean navigation
 - [03-02]: Thai dates via toLocaleDateString('th-TH') producing Buddhist Era years (e.g., 2569)
+- [03-03]: Rest param [...page] for clean /articles/ first page URL (not /articles/1/)
+- [03-03]: Category pages generated for all slugs via flatMap, empty categories show Thai empty state
+- [03-03]: Reading time omitted from article cards for performance (no render() per card)
 
 ### Pending Todos
 
@@ -77,5 +80,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 03-02-PLAN.md -- Article pages, SEO enhancement & layout, ready for 03-03
+Stopped at: Completed 03-03-PLAN.md -- Phase 3 complete, ready for Phase 4
 Resume file: None
