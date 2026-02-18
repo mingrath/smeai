@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 5 in progress -- Video Integration.
+**Current focus:** Phase 5 complete -- Video Integration. Ready for Phase 6.
 
 ## Current Position
 
-Phase: 5 of 6 (Video Integration)
-Plan: 1 of 2 in current phase (05-01 complete)
-Status: Executing Phase 5
-Last activity: 2026-02-18 -- Completed 05-01 (Video Collection & Components)
+Phase: 5 of 6 (Video Integration) -- COMPLETE
+Plan: 2 of 2 in current phase (05-02 complete)
+Status: Phase 5 Complete
+Last activity: 2026-02-18 -- Completed 05-02 (Video Pages, Article Embedding & Navigation)
 
-Progress: [████████░░] 83%
+Progress: [█████████░] 92%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 3.3min
-- Total execution time: 0.58 hours
+- Total plans completed: 11
+- Average duration: 3.4min
+- Total execution time: 0.62 hours
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [████████░░] 83%
 | 02-landing-page | 2 | 5min | 2.5min |
 | 03-content-system | 3 | 10min | 3.3min |
 | 04-project-showcase | 2 | 6min | 3min |
-| 05-video-integration | 1 | 3min | 3min |
+| 05-video-integration | 2 | 7min | 3.5min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 2min, 3min, 3min, 3min
+- Last 5 plans: 2min, 3min, 3min, 3min, 4min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -81,6 +81,9 @@ Recent decisions affecting current work:
 - [05-01]: BaseLayout ogType extended to accept video.other for proper Open Graph video type
 - [05-01]: Videos collection uses flat loader (no subdirectories) so video.id is the slug directly
 - [05-01]: thumbnailRes=sd (640px) for YouTube facade to avoid broken maxresdefault on lower-res uploads
+- [05-02]: Videos listing uses flat grid (no pagination) matching showcase pattern -- small collection
+- [05-02]: Video embed placed between ArticleMeta and TableOfContents for prominence
+- [05-02]: Navigation label uses English "Videos" consistent with other nav items
 
 ### Pending Todos
 
@@ -93,5 +96,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 05-01-PLAN.md -- Video Collection & Components
+Stopped at: Completed 05-02-PLAN.md -- Video Pages, Article Embedding & Navigation (Phase 5 complete)
 Resume file: None
