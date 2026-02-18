@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
 - [x] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
 - [x] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
-- [ ] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
+- [x] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
 - [ ] **Phase 6: Search & Performance** - Pagefind client-side search with Thai support and Core Web Vitals audit
 
 ## Phase Details
@@ -94,8 +94,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md -- Videos Collection, Seed Content & Reusable Components
-- [ ] 05-02-PLAN.md -- Video Pages, Article Cross-Linking & Navigation
+- [x] 05-01-PLAN.md -- Videos Collection, Seed Content & Reusable Components
+- [x] 05-02-PLAN.md -- Video Pages, Article Cross-Linking & Navigation
 
 ### Phase 6: Search & Performance
 **Goal**: Visitors can search across all site content in Thai and mixed Thai-English, and the site passes Core Web Vitals thresholds on mobile
@@ -122,5 +122,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Landing Page & Contact | 2/2 | ✓ Complete | 2026-02-18 |
 | 3. Content System & Articles | 3/3 | ✓ Complete | 2026-02-18 |
 | 4. Project Showcase | 2/2 | ✓ Complete | 2026-02-18 |
-| 5. Video Integration | 0/TBD | Not started | - |
+| 5. Video Integration | 2/2 | ✓ Complete | 2026-02-18 |
 | 6. Search & Performance | 0/TBD | Not started | - |

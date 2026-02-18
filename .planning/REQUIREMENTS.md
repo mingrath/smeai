@@ -34,9 +34,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Video Content
 
-- [ ] **VIDE-01**: YouTube videos use lazy-load facade pattern (thumbnail + click-to-play)
-- [ ] **VIDE-02**: Video content has companion written articles for SEO value
-- [ ] **VIDE-03**: Video listing page shows all video content with metadata
+- [x] **VIDE-01**: YouTube videos use lazy-load facade pattern (thumbnail + click-to-play)
+- [x] **VIDE-02**: Video content has companion written articles for SEO value
+- [x] **VIDE-03**: Video listing page shows all video content with metadata
 
 ### Contact & Lead Generation
 
@@ -125,9 +125,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SHOW-02 | Phase 4 | Done |
 | SHOW-03 | Phase 4 | Done |
 | SHOW-04 | Phase 4 | Done |
-| VIDE-01 | Phase 5 | Pending |
-| VIDE-02 | Phase 5 | Pending |
-| VIDE-03 | Phase 5 | Pending |
+| VIDE-01 | Phase 5 | Done |
+| VIDE-02 | Phase 5 | Done |
+| VIDE-03 | Phase 5 | Done |
 | LEAD-01 | Phase 2 | Done |
 | LEAD-02 | Phase 1 | Done |
 | SEO-01 | Phase 3 | Done |
@@ -147,4 +147,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-18 after Phase 4 completion*
+*Last updated: 2026-02-18 after Phase 5 completion*
