@@ -5,32 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 1 complete -- ready for Phase 2
+**Current focus:** Phase 2 in progress -- Landing Page & Contact
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation & Site Shell) -- COMPLETE
-Plan: 2 of 2 in current phase (all done)
-Status: Phase Complete
-Last activity: 2026-02-18 -- Completed 01-02 (Layout Shell & Deployment)
+Phase: 2 of 6 (Landing Page & Contact)
+Plan: 1 of 2 in current phase (02-01 complete)
+Status: In Progress
+Last activity: 2026-02-18 -- Completed 02-01 (Contact Constants & Contact Page)
 
-Progress: [██░░░░░░░░] 17%
+Progress: [███░░░░░░░] 25%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 5.5min
-- Total execution time: 0.18 hours
+- Total plans completed: 3
+- Average duration: 4.3min
+- Total execution time: 0.22 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 11min | 5.5min |
+| 02-landing-page | 1 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 7min, 4min
+- Last 5 plans: 7min, 4min, 2min
 - Trend: improving
 
 *Updated after each plan completion*
@@ -51,6 +52,8 @@ Recent decisions affecting current work:
 - [01-02]: Component scripts use astro:after-swap for view transitions compatibility
 - [01-02]: Heroicons SVGs inlined directly (no icon library dependency)
 - [01-02]: GitHub repo created as public at mingrath/smeai, pushed to main
+- [02-01]: Single CONTACT const object in src/lib/contact.ts as single source of truth for all contact info
+- [02-01]: Phone added to full variant only (compact stays LINE + email for clean header)
 
 ### Pending Todos
 
@@ -63,5 +66,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 01-02-PLAN.md -- Phase 1 complete, ready for Phase 2
+Stopped at: Completed 02-01-PLAN.md -- Contact constants and /contact page done, ready for 02-02
 Resume file: None
