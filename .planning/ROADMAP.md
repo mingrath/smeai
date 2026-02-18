@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
 - [x] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
 - [x] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
-- [ ] **Phase 6: Search & Performance** - Pagefind client-side search with Thai support and Core Web Vitals audit
+- [x] **Phase 6: Search & Performance** - Pagefind client-side search with Thai support and Core Web Vitals audit
 
 ## Phase Details
 
@@ -108,8 +108,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md -- Pagefind Search Integration & Search UI
-- [ ] 06-02-PLAN.md -- Font Preloading & Performance Audit
+- [x] 06-01-PLAN.md -- Pagefind Search Integration & Search UI
+- [x] 06-02-PLAN.md -- Font Preloading & Performance Audit
 
 ## Progress
 
@@ -123,4 +123,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Content System & Articles | 3/3 | ✓ Complete | 2026-02-18 |
 | 4. Project Showcase | 2/2 | ✓ Complete | 2026-02-18 |
 | 5. Video Integration | 2/2 | ✓ Complete | 2026-02-18 |
-| 6. Search & Performance | 0/2 | Not started | - |
+| 6. Search & Performance | 2/2 | ✓ Complete | 2026-02-18 |

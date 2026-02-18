@@ -50,13 +50,13 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-03**: XML sitemap auto-generated at build time
 - [ ] **SEO-04**: Cloudflare Analytics integrated (cookieless, PDPA-compliant)
 - [ ] **SEO-05**: Self-hosted Noto Sans Thai + Inter fonts via Fontsource
-- [ ] **SEO-06**: Core Web Vitals pass (Lighthouse mobile score 90+)
+- [x] **SEO-06**: Core Web Vitals pass (Lighthouse mobile score 90+)
 - [ ] **SEO-07**: Site deployed on Cloudflare Pages with CI/CD from GitHub
 
 ### Search
 
-- [ ] **SRCH-01**: Pagefind client-side search indexes all content at build time
-- [ ] **SRCH-02**: Search supports Thai text queries and mixed Thai-English queries
+- [x] **SRCH-01**: Pagefind client-side search indexes all content at build time
+- [x] **SRCH-02**: Search supports Thai text queries and mixed Thai-English queries
 
 ## v2 Requirements
 
@@ -135,10 +135,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 3 | Done |
 | SEO-04 | Phase 1 | Done |
 | SEO-05 | Phase 1 | Done |
-| SEO-06 | Phase 6 | Pending |
+| SEO-06 | Phase 6 | Done |
 | SEO-07 | Phase 1 | Done |
-| SRCH-01 | Phase 6 | Pending |
-| SRCH-02 | Phase 6 | Pending |
+| SRCH-01 | Phase 6 | Done |
+| SRCH-02 | Phase 6 | Done |
 
 **Coverage:**
 - v1 requirements: 30 total
@@ -147,4 +147,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-18 after Phase 5 completion*
+*Last updated: 2026-02-18 after Phase 6 completion — all v1 requirements Done*
