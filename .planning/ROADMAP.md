@@ -77,11 +77,11 @@ Plans:
   1. Project showcase page displays a grid of portfolio cards with project thumbnails and descriptions
   2. Individual case study pages follow Problem -> Solution -> Results structure with at least one concrete business metric
   3. Featured projects appear on the homepage, pulling from the project collection
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md -- Content Collection, Seed Projects & Reusable Components
+- [ ] 04-02-PLAN.md -- Showcase Pages, ProjectLayout & Homepage Featured Section
 
 ### Phase 5: Video Integration
 **Goal**: Visitors can watch YouTube video content without page performance penalty, and every video has a companion written article for SEO value
