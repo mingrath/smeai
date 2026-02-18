@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 5 complete -- Video Integration. Ready for Phase 6.
+**Current focus:** Phase 6 in progress -- Search & Performance.
 
 ## Current Position
 
-Phase: 5 of 6 (Video Integration) -- COMPLETE
-Plan: 2 of 2 in current phase (05-02 complete)
-Status: Phase 5 Complete
-Last activity: 2026-02-18 -- Completed 05-02 (Video Pages, Article Embedding & Navigation)
+Phase: 6 of 6 (Search & Performance)
+Plan: 1 of 2 in current phase (06-01 complete)
+Status: Executing Phase 6
+Last activity: 2026-02-18 -- Completed 06-01 (Pagefind Search Integration)
 
-Progress: [█████████░] 92%
+Progress: [█████████░] 95%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 3.4min
-- Total execution time: 0.62 hours
+- Total plans completed: 12
+- Average duration: 3.6min
+- Total execution time: 0.73 hours
 
 **By Phase:**
 
@@ -32,9 +32,10 @@ Progress: [█████████░] 92%
 | 03-content-system | 3 | 10min | 3.3min |
 | 04-project-showcase | 2 | 6min | 3min |
 | 05-video-integration | 2 | 7min | 3.5min |
+| 06-search-and-performance | 1 | 6min | 6min |
 
 **Recent Trend:**
-- Last 5 plans: 2min, 3min, 3min, 3min, 4min
+- Last 5 plans: 3min, 3min, 3min, 4min, 6min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -84,6 +85,10 @@ Recent decisions affecting current work:
 - [05-02]: Videos listing uses flat grid (no pagination) matching showcase pattern -- small collection
 - [05-02]: Video embed placed between ArticleMeta and TableOfContents for prominence
 - [05-02]: Navigation label uses English "Videos" consistent with other nav items
+- [06-01]: Used is:inline script for SearchDialog to bypass Vite module resolution of runtime Pagefind import
+- [06-01]: Pagefind UI lazy-loaded on first dialog open -- zero JS/WASM until user searches
+- [06-01]: data-pagefind-body on content layouts only -- homepage/listing/utility pages excluded from search
+- [06-01]: Hidden span with data-pagefind-filter="content_type" for search faceting
 
 ### Pending Todos
 
@@ -96,5 +101,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 05-02-PLAN.md -- Video Pages, Article Embedding & Navigation (Phase 5 complete)
+Stopped at: Completed 06-01-PLAN.md -- Pagefind Search Integration
 Resume file: None
