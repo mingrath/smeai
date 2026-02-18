@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from '../project/ProjectCard.astro';
+
+const projects = await getCollection('projects', ({ data }) => !data.draft && data.featured);
+const sorted = projects
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+{sorted.length > 0 && (
+  <section id="projects" class="py-16 md:py-24 bg-surface-100 dark:bg-surface-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-surface-900 dark:text-surface-100 mb-4">
+          ผลงาน
+        </h2>
+        <p class="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto leading-relaxed">
+          ตัวอย่างโปรเจกต์ AI ที่ช่วยธุรกิจ SME จริง
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sorted.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="/showcase/"
+          class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 font-medium hover:underline"
+        >
+          ดูผลงานทั้งหมด
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+)}
