@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 Phase: 3 of 6 (Content System & Articles)
-Plan: 1 of 3 in current phase (03-01 complete)
+Plan: 2 of 3 in current phase (03-02 complete)
 Status: Executing
-Last activity: 2026-02-18 -- Completed 03-01 (Content Foundation & Feed Infrastructure)
+Last activity: 2026-02-18 -- Completed 03-02 (Article Pages, SEO Enhancement & Layout)
 
-Progress: [█████░░░░░] 42%
+Progress: [██████░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
+- Total plans completed: 6
 - Average duration: 4min
-- Total execution time: 0.34 hours
+- Total execution time: 0.41 hours
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [█████░░░░░] 42%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 11min | 5.5min |
 | 02-landing-page | 2 | 5min | 2.5min |
-| 03-content-system | 1 | 4min | 4min |
+| 03-content-system | 2 | 8min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 2min, 3min, 4min
+- Last 5 plans: 2min, 3min, 4min, 4min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -61,6 +61,10 @@ Recent decisions affecting current work:
 - [03-01]: Thai word counting via Intl.Segmenter at 200 WPM instead of space-based splitting
 - [03-01]: Article slugs derived from filename via article.id.split('/').pop() for flat URL structure
 - [03-01]: 4 initial categories: ai-basics, tools, case-studies, news
+- [03-02]: seoTitle used for page title when present (Tinglish SEO), Thai title otherwise
+- [03-02]: JSON-LD via set:html={JSON.stringify(schema)} to avoid entity escaping
+- [03-02]: TOC renders h2/h3 only, deeper headings ignored for clean navigation
+- [03-02]: Thai dates via toLocaleDateString('th-TH') producing Buddhist Era years (e.g., 2569)
 
 ### Pending Todos
 
@@ -73,5 +77,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 03-01-PLAN.md -- Content foundation & feed infrastructure, ready for 03-02
+Stopped at: Completed 03-02-PLAN.md -- Article pages, SEO enhancement & layout, ready for 03-03
 Resume file: None
