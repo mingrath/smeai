@@ -35,8 +35,8 @@
 		async function openSearch() {
 			dialog.showModal();
 			if (!initialized) {
-				var mod = await import('/pagefind/pagefind-ui.js');
-				new mod.PagefindUI({
+				await import('/pagefind/pagefind-ui.js');
+				new window.PagefindUI({
 					element: '#pagefind-container',
 					showSubResults: true,
 					showImages: false,
