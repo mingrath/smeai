@@ -103,3 +103,23 @@
 		--tw-prose-links: var(--color-primary-400);
 	}
 }
+
+/* === Pagefind search theme === */
+:root {
+	--pagefind-ui-scale: 0.9;
+	--pagefind-ui-primary: oklch(0.55 0.18 240);
+	--pagefind-ui-background: oklch(0.985 0.004 80);
+	--pagefind-ui-border: oklch(0.925 0.007 80);
+	--pagefind-ui-tag: oklch(0.93 0.03 240);
+	--pagefind-ui-text: oklch(0.2 0.008 80);
+	--pagefind-ui-font: "Noto Sans Thai Variable", "Inter Variable", ui-sans-serif, sans-serif;
+	--pagefind-ui-border-radius: 0.5rem;
+}
+
+.dark {
+	--pagefind-ui-primary: oklch(0.68 0.14 240);
+	--pagefind-ui-background: oklch(0.14 0.006 80);
+	--pagefind-ui-border: oklch(0.27 0.01 75);
+	--pagefind-ui-tag: oklch(0.27 0.1 240);
+	--pagefind-ui-text: oklch(0.965 0.005 80);
+}

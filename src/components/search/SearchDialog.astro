@@ -1,0 +1,92 @@
+---
+// SearchDialog: Native <dialog> with lazy-loaded Pagefind UI
+// Opens via Cmd/Ctrl+K or search trigger button in header
+---
+
+<dialog
+	id="search-dialog"
+	class="w-full max-w-[40rem] mx-auto mt-[10vh] p-0 rounded-xl bg-surface-50 dark:bg-surface-900 border border-surface-200 dark:border-surface-700 shadow-2xl backdrop:bg-surface-950/50"
+>
+	<div class="flex items-center justify-between px-4 pt-4 pb-2">
+		<span class="text-sm font-medium text-surface-500 dark:text-surface-400">Search</span>
+		<button
+			id="search-close"
+			type="button"
+			aria-label="Close search"
+			class="p-1.5 rounded-lg text-surface-500 hover:bg-surface-200 dark:text-surface-400 dark:hover:bg-surface-800 transition-colors"
+		>
+			<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+			</svg>
+		</button>
+	</div>
+	<div id="pagefind-container" class="px-4 pb-4"></div>
+</dialog>
+
+<script is:inline>
+	function initSearchDialog() {
+		var dialog = document.getElementById('search-dialog');
+		var closeBtn = document.getElementById('search-close');
+		var trigger = document.getElementById('search-trigger');
+		if (!dialog) return;
+
+		var initialized = false;
+
+		async function openSearch() {
+			dialog.showModal();
+			if (!initialized) {
+				var mod = await import('/pagefind/pagefind-ui.js');
+				new mod.PagefindUI({
+					element: '#pagefind-container',
+					showSubResults: true,
+					showImages: false,
+					autofocus: true,
+				});
+				initialized = true;
+			}
+			// Focus the search input after init
+			setTimeout(function () {
+				var input = dialog.querySelector('input');
+				if (input) input.focus();
+			}, 100);
+		}
+
+		// Cmd/Ctrl+K keyboard shortcut
+		document.addEventListener('keydown', function (e) {
+			if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+				e.preventDefault();
+				if (dialog.open) {
+					dialog.close();
+				} else {
+					openSearch();
+				}
+			}
+		});
+
+		// Click-outside-to-close (clicking the backdrop)
+		dialog.addEventListener('click', function (e) {
+			if (e.target === dialog) {
+				dialog.close();
+			}
+		});
+
+		// Close button
+		if (closeBtn) {
+			closeBtn.addEventListener('click', function () {
+				dialog.close();
+			});
+		}
+
+		// Search trigger button in header
+		if (trigger) {
+			trigger.addEventListener('click', function () {
+				openSearch();
+			});
+		}
+	}
+
+	initSearchDialog();
+
+	// Re-initialize after view transitions
+	document.addEventListener('astro:after-swap', initSearchDialog);
+</script>

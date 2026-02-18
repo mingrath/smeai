@@ -34,6 +34,19 @@ import ContactLinks from './ContactLinks.astro';
 
 		<!-- Right side actions -->
 		<div class="flex items-center gap-1">
+			<!-- Search trigger -->
+			<button
+				id="search-trigger"
+				type="button"
+				aria-label="Search"
+				class="p-2 rounded-lg text-surface-600 hover:bg-surface-200 dark:text-surface-400 dark:hover:bg-surface-800 transition-colors flex items-center gap-1.5"
+			>
+				<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+				</svg>
+				<kbd class="hidden md:inline text-[10px] font-sans px-1.5 py-0.5 rounded bg-surface-200 dark:bg-surface-700 text-surface-500 dark:text-surface-400 border border-surface-300 dark:border-surface-600">&#8984;K</kbd>
+			</button>
+
 			<!-- Contact links (desktop only) -->
 			<div class="hidden md:flex">
 				<ContactLinks variant="compact" />
