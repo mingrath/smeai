@@ -6,6 +6,7 @@ import Header from '../components/common/Header.astro';
 import Footer from '../components/common/Footer.astro';
 import MobileNav from '../components/common/MobileNav.astro';
 import SearchDialog from '../components/search/SearchDialog.astro';
+import notoSansThaiWoff2 from '@fontsource-variable/noto-sans-thai/files/noto-sans-thai-thai-wght-normal.woff2?url';
 
 interface Props {
 	title: string;
@@ -32,6 +33,7 @@ const ogImageURL = ogImage ? new URL(ogImage, Astro.site) : undefined;
 ---
 <html lang="th" class="scroll-smooth">
 	<head>
+		<link rel="preload" as="font" type="font/woff2" href={notoSansThaiWoff2} crossorigin="anonymous" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content={description} />
