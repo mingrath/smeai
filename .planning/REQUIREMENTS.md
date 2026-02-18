@@ -17,13 +17,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content & Articles
 
-- [ ] **CONT-01**: User can browse articles organized by categories and tags
-- [ ] **CONT-02**: Article pages have table of contents, estimated reading time, and visual breaks
-- [ ] **CONT-03**: Articles are Thai-primary with Tinglish SEO keywords in titles and meta
-- [ ] **CONT-04**: Every article has a `lastReviewed` date displayed prominently
-- [ ] **CONT-05**: Content collection uses Zod schema validation for consistent frontmatter
-- [ ] **CONT-06**: Article listing page with pagination/filtering by category
-- [ ] **CONT-07**: RSS feed available for article subscription
+- [x] **CONT-01**: User can browse articles organized by categories and tags
+- [x] **CONT-02**: Article pages have table of contents, estimated reading time, and visual breaks
+- [x] **CONT-03**: Articles are Thai-primary with Tinglish SEO keywords in titles and meta
+- [x] **CONT-04**: Every article has a `lastReviewed` date displayed prominently
+- [x] **CONT-05**: Content collection uses Zod schema validation for consistent frontmatter
+- [x] **CONT-06**: Article listing page with pagination/filtering by category
+- [x] **CONT-07**: RSS feed available for article subscription
 
 ### Project Showcase
 
@@ -45,9 +45,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO & Performance
 
-- [ ] **SEO-01**: Every page has proper meta tags, Open Graph with `og:locale=th_TH`, and canonical URLs
-- [ ] **SEO-02**: Structured data (Article schema, BreadcrumbList) on relevant pages
-- [ ] **SEO-03**: XML sitemap auto-generated at build time
+- [x] **SEO-01**: Every page has proper meta tags, Open Graph with `og:locale=th_TH`, and canonical URLs
+- [x] **SEO-02**: Structured data (Article schema, BreadcrumbList) on relevant pages
+- [x] **SEO-03**: XML sitemap auto-generated at build time
 - [ ] **SEO-04**: Cloudflare Analytics integrated (cookieless, PDPA-compliant)
 - [ ] **SEO-05**: Self-hosted Noto Sans Thai + Inter fonts via Fontsource
 - [ ] **SEO-06**: Core Web Vitals pass (Lighthouse mobile score 90+)
@@ -114,13 +114,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAND-03 | Phase 1 | Done |
 | LAND-04 | Phase 2 | Done |
 | LAND-05 | Phase 1 | Done |
-| CONT-01 | Phase 3 | Pending |
-| CONT-02 | Phase 3 | Pending |
-| CONT-03 | Phase 3 | Pending |
-| CONT-04 | Phase 3 | Pending |
-| CONT-05 | Phase 3 | Pending |
-| CONT-06 | Phase 3 | Pending |
-| CONT-07 | Phase 3 | Pending |
+| CONT-01 | Phase 3 | Done |
+| CONT-02 | Phase 3 | Done |
+| CONT-03 | Phase 3 | Done |
+| CONT-04 | Phase 3 | Done |
+| CONT-05 | Phase 3 | Done |
+| CONT-06 | Phase 3 | Done |
+| CONT-07 | Phase 3 | Done |
 | SHOW-01 | Phase 4 | Pending |
 | SHOW-02 | Phase 4 | Pending |
 | SHOW-03 | Phase 4 | Pending |
@@ -130,9 +130,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIDE-03 | Phase 5 | Pending |
 | LEAD-01 | Phase 2 | Done |
 | LEAD-02 | Phase 1 | Done |
-| SEO-01 | Phase 3 | Pending |
-| SEO-02 | Phase 3 | Pending |
-| SEO-03 | Phase 3 | Pending |
+| SEO-01 | Phase 3 | Done |
+| SEO-02 | Phase 3 | Done |
+| SEO-03 | Phase 3 | Done |
 | SEO-04 | Phase 1 | Done |
 | SEO-05 | Phase 1 | Done |
 | SEO-06 | Phase 6 | Pending |
@@ -147,4 +147,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-18 after Phase 2 completion*
+*Last updated: 2026-02-18 after Phase 3 completion*

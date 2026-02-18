@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Site Shell** - Deployable skeleton with layout, Thai typography, mobile-first design, deployment pipeline, and persistent contact links
 - [x] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
-- [ ] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
+- [x] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
 - [ ] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
 - [ ] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
 - [ ] **Phase 6: Search & Performance** - Pagefind client-side search with Thai support and Core Web Vitals audit
@@ -65,9 +65,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Content Foundation & Feed Infrastructure
-- [ ] 03-02-PLAN.md -- Article Pages, SEO Enhancement & Layout
-- [ ] 03-03-PLAN.md -- Article Listing & Category Browsing
+- [x] 03-01-PLAN.md -- Content Foundation & Feed Infrastructure
+- [x] 03-02-PLAN.md -- Article Pages, SEO Enhancement & Layout
+- [x] 03-03-PLAN.md -- Article Listing & Category Browsing
 
 ### Phase 4: Project Showcase
 **Goal**: Visitors can browse Ohm's AI projects as portfolio cards, read detailed case studies with business outcomes, and see featured projects highlighted on the homepage
@@ -120,7 +120,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
 | 2. Landing Page & Contact | 2/2 | ✓ Complete | 2026-02-18 |
-| 3. Content System & Articles | 0/3 | In progress | - |
+| 3. Content System & Articles | 3/3 | ✓ Complete | 2026-02-18 |
 | 4. Project Showcase | 0/TBD | Not started | - |
 | 5. Video Integration | 0/TBD | Not started | - |
 | 6. Search & Performance | 0/TBD | Not started | - |
