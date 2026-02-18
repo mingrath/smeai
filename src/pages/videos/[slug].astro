@@ -1,0 +1,24 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import VideoLayout from '../../layouts/VideoLayout.astro';
+
+export async function getStaticPaths() {
+	const videos = await getCollection('videos', ({ data }) => !data.draft);
+	return videos.map((video) => ({
+		params: { slug: video.id },
+		props: { video },
+	}));
+}
+
+const { video } = Astro.props;
+const { Content, headings, remarkPluginFrontmatter } = await render(video);
+const companionArticle = await getEntry(video.data.companionArticle);
+---
+
+<VideoLayout
+	video={video}
+	companionArticle={companionArticle}
+	readingTime={remarkPluginFrontmatter.minutesRead}
+>
+	<Content />
+</VideoLayout>
