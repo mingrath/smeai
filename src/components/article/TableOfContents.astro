@@ -1,0 +1,70 @@
+---
+interface TocHeading {
+	depth: number;
+	slug: string;
+	text: string;
+	subheadings: TocHeading[];
+}
+
+interface Props {
+	headings: { depth: number; slug: string; text: string }[];
+}
+
+const { headings } = Astro.props;
+
+function buildToc(
+	headings: { depth: number; slug: string; text: string }[]
+): TocHeading[] {
+	const toc: TocHeading[] = [];
+	const parentHeadings = new Map<number, TocHeading>();
+
+	for (const h of headings) {
+		if (h.depth < 2 || h.depth > 3) continue;
+		const heading: TocHeading = { ...h, subheadings: [] };
+		parentHeadings.set(heading.depth, heading);
+		if (heading.depth === 2) {
+			toc.push(heading);
+		} else {
+			parentHeadings.get(heading.depth - 1)?.subheadings.push(heading);
+		}
+	}
+
+	return toc;
+}
+
+const toc = buildToc(headings);
+---
+
+{toc.length > 0 && (
+	<nav aria-label="สารบัญ" class="mb-8 p-4 rounded-xl bg-surface-100 dark:bg-surface-800/50 border border-surface-200 dark:border-surface-700">
+		<h2 class="text-sm font-semibold text-surface-900 dark:text-surface-100 uppercase tracking-wider mb-3">
+			สารบัญ
+		</h2>
+		<ul class="space-y-1.5 text-sm">
+			{toc.map((heading) => (
+				<li>
+					<a
+						href={`#${heading.slug}`}
+						class="text-surface-600 hover:text-primary-600 dark:text-surface-400 dark:hover:text-primary-400 transition-colors"
+					>
+						{heading.text}
+					</a>
+					{heading.subheadings.length > 0 && (
+						<ul class="ml-4 mt-1.5 space-y-1.5">
+							{heading.subheadings.map((sub) => (
+								<li>
+									<a
+										href={`#${sub.slug}`}
+										class="text-surface-500 hover:text-primary-600 dark:text-surface-400 dark:hover:text-primary-400 transition-colors"
+									>
+										{sub.text}
+									</a>
+								</li>
+							))}
+						</ul>
+					)}
+				</li>
+			))}
+		</ul>
+	</nav>
+)}
