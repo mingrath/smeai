@@ -8,6 +8,7 @@ lastReviewed: 2026-02-15
 draft: false
 seoTitle: "ChatGPT for Thai SME - What is ChatGPT"
 seoKeywords: ["chatgpt thai", "AI for SME", "chatgpt sme"]
+video: chatgpt-intro
 ---
 
 ## ChatGPT คืออะไร?

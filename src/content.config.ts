@@ -1,4 +1,4 @@
-import { defineCollection } from "astro:content";
+import { defineCollection, reference } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
@@ -14,6 +14,7 @@ const articles = defineCollection({
 		draft: z.boolean().default(false),
 		seoTitle: z.string().optional(),
 		seoKeywords: z.array(z.string()).default([]),
+		video: reference("videos").optional(),
 	}),
 });
 
@@ -37,4 +38,20 @@ const projects = defineCollection({
 	}),
 });
 
-export const collections = { articles, projects };
+const videos = defineCollection({
+	loader: glob({ pattern: "**/*.md", base: "./src/content/videos" }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		youtubeId: z.string(),
+		duration: z.string().optional(),
+		companionArticle: reference("articles"),
+		tags: z.array(z.string()).default([]),
+		pubDate: z.coerce.date(),
+		draft: z.boolean().default(false),
+		seoTitle: z.string().optional(),
+		seoKeywords: z.array(z.string()).default([]),
+	}),
+});
+
+export const collections = { articles, projects, videos };

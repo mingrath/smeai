@@ -8,6 +8,7 @@ lastReviewed: 2026-02-15
 draft: false
 seoTitle: "LINE OA Chatbot with AI - No Code Required"
 seoKeywords: ["line oa chatbot", "chatbot ai", "line official account bot"]
+video: line-oa-chatbot-setup
 ---
 
 ## ทำไมต้องมี Chatbot บน LINE OA?
