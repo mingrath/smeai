@@ -109,10 +109,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAND-01 | Phase 2 | Pending |
-| LAND-02 | Phase 2 | Pending |
+| LAND-01 | Phase 2 | Done |
+| LAND-02 | Phase 2 | Done |
 | LAND-03 | Phase 1 | Done |
-| LAND-04 | Phase 2 | Pending |
+| LAND-04 | Phase 2 | Done |
 | LAND-05 | Phase 1 | Done |
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
@@ -128,7 +128,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIDE-01 | Phase 5 | Pending |
 | VIDE-02 | Phase 5 | Pending |
 | VIDE-03 | Phase 5 | Pending |
-| LEAD-01 | Phase 2 | Pending |
+| LEAD-01 | Phase 2 | Done |
 | LEAD-02 | Phase 1 | Done |
 | SEO-01 | Phase 3 | Pending |
 | SEO-02 | Phase 3 | Pending |
@@ -147,4 +147,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-17 after roadmap creation*
+*Last updated: 2026-02-18 after Phase 2 completion*

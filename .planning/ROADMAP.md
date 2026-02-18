@@ -13,7 +13,7 @@ SMEAI delivers a Thai-primary knowledge hub and consulting lead generator for SM
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Site Shell** - Deployable skeleton with layout, Thai typography, mobile-first design, deployment pipeline, and persistent contact links
-- [ ] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
+- [x] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
 - [ ] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
 - [ ] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
 - [ ] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
@@ -49,8 +49,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Contact Constants & Contact Page
-- [ ] 02-02-PLAN.md -- Homepage Sections (Hero, About, Services, CTA)
+- [x] 02-01-PLAN.md -- Contact Constants & Contact Page
+- [x] 02-02-PLAN.md -- Homepage Sections (Hero, About, Services, CTA)
 
 ### Phase 3: Content System & Articles
 **Goal**: Ohm can publish Thai-language articles via Markdown with validated frontmatter, and visitors can browse articles by category, read with a polished experience, and subscribe via RSS
@@ -119,7 +119,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
-| 2. Landing Page & Contact | 0/2 | Not started | - |
+| 2. Landing Page & Contact | 2/2 | ✓ Complete | 2026-02-18 |
 | 3. Content System & Articles | 0/TBD | Not started | - |
 | 4. Project Showcase | 0/TBD | Not started | - |
 | 5. Video Integration | 0/TBD | Not started | - |
