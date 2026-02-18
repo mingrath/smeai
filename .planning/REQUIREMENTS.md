@@ -27,10 +27,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Project Showcase
 
-- [ ] **SHOW-01**: Project showcase displays as a grid of portfolio cards
-- [ ] **SHOW-02**: Individual case study pages follow Problem → Solution → Results structure
-- [ ] **SHOW-03**: Case studies include at least one concrete business metric
-- [ ] **SHOW-04**: Featured projects appear on the homepage
+- [x] **SHOW-01**: Project showcase displays as a grid of portfolio cards
+- [x] **SHOW-02**: Individual case study pages follow Problem → Solution → Results structure
+- [x] **SHOW-03**: Case studies include at least one concrete business metric
+- [x] **SHOW-04**: Featured projects appear on the homepage
 
 ### Video Content
 
@@ -121,10 +121,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-05 | Phase 3 | Done |
 | CONT-06 | Phase 3 | Done |
 | CONT-07 | Phase 3 | Done |
-| SHOW-01 | Phase 4 | Pending |
-| SHOW-02 | Phase 4 | Pending |
-| SHOW-03 | Phase 4 | Pending |
-| SHOW-04 | Phase 4 | Pending |
+| SHOW-01 | Phase 4 | Done |
+| SHOW-02 | Phase 4 | Done |
+| SHOW-03 | Phase 4 | Done |
+| SHOW-04 | Phase 4 | Done |
 | VIDE-01 | Phase 5 | Pending |
 | VIDE-02 | Phase 5 | Pending |
 | VIDE-03 | Phase 5 | Pending |
@@ -147,4 +147,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-18 after Phase 3 completion*
+*Last updated: 2026-02-18 after Phase 4 completion*

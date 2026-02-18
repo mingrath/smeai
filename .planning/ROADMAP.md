@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Site Shell** - Deployable skeleton with layout, Thai typography, mobile-first design, deployment pipeline, and persistent contact links
 - [x] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
 - [x] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
-- [ ] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
+- [x] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
 - [ ] **Phase 5: Video Integration** - Lazy YouTube embeds, companion written articles, and video listing page
 - [ ] **Phase 6: Search & Performance** - Pagefind client-side search with Thai support and Core Web Vitals audit
 
@@ -80,8 +80,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Content Collection, Seed Projects & Reusable Components
-- [ ] 04-02-PLAN.md -- Showcase Pages, ProjectLayout & Homepage Featured Section
+- [x] 04-01-PLAN.md -- Content Collection, Seed Projects & Reusable Components
+- [x] 04-02-PLAN.md -- Showcase Pages, ProjectLayout & Homepage Featured Section
 
 ### Phase 5: Video Integration
 **Goal**: Visitors can watch YouTube video content without page performance penalty, and every video has a companion written article for SEO value
@@ -121,6 +121,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
 | 2. Landing Page & Contact | 2/2 | ✓ Complete | 2026-02-18 |
 | 3. Content System & Articles | 3/3 | ✓ Complete | 2026-02-18 |
-| 4. Project Showcase | 0/TBD | Not started | - |
+| 4. Project Showcase | 2/2 | ✓ Complete | 2026-02-18 |
 | 5. Video Integration | 0/TBD | Not started | - |
 | 6. Search & Performance | 0/TBD | Not started | - |
