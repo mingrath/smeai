@@ -1,16 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/landing/Hero.astro';
+import About from '../components/landing/About.astro';
+import Services from '../components/landing/Services.astro';
+import CallToAction from '../components/landing/CallToAction.astro';
 ---
-<BaseLayout title="Home">
-	<section class="prose-container py-20">
-		<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-4">
-			AI สำหรับ SME ไทย
-		</h1>
-		<p class="text-lg text-surface-600 dark:text-surface-400 leading-relaxed">
-			เรียนรู้การนำ AI มาใช้ในธุรกิจ SME อย่างคุ้มค่า พร้อมตัวอย่างจริงและคำปรึกษาจากผู้เชี่ยวชาญ
-		</p>
-		<p class="mt-8 text-sm text-surface-400 dark:text-surface-500 italic">
-			Site is under construction. Content coming soon.
-		</p>
-	</section>
+<BaseLayout title="Home" description="ช่วย SME ไทยนำ AI มาใช้ในธุรกิจอย่างคุ้มค่า พร้อมคำปรึกษาจากผู้เชี่ยวชาญ">
+  <Hero />
+  <About />
+  <Services />
+  <CallToAction />
 </BaseLayout>
