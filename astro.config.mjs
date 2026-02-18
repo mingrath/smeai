@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 import { remarkReadingTime } from "./plugins/remark-reading-time.mjs";
 
 export default defineConfig({
-	site: "https://smeai.pages.dev",
+	site: "https://smeaithai.com",
 	integrations: [preact(), sitemap(), pagefind()],
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
