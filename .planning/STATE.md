@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 6 in progress -- Search & Performance.
+**Current focus:** All phases complete -- v1.0 feature-complete.
 
 ## Current Position
 
-Phase: 6 of 6 (Search & Performance)
-Plan: 1 of 2 in current phase (06-01 complete)
-Status: Executing Phase 6
-Last activity: 2026-02-18 -- Completed 06-01 (Pagefind Search Integration)
+Phase: 6 of 6 (Search & Performance) -- COMPLETE
+Plan: 2 of 2 in current phase (06-02 complete)
+Status: All Phases Complete
+Last activity: 2026-02-18 -- Completed 06-02 (Font Preload & Performance Audit)
 
-Progress: [█████████░] 95%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 3.6min
-- Total execution time: 0.73 hours
+- Total plans completed: 13
+- Average duration: 3.5min
+- Total execution time: 0.81 hours
 
 **By Phase:**
 
@@ -32,10 +32,10 @@ Progress: [█████████░] 95%
 | 03-content-system | 3 | 10min | 3.3min |
 | 04-project-showcase | 2 | 6min | 3min |
 | 05-video-integration | 2 | 7min | 3.5min |
-| 06-search-and-performance | 1 | 6min | 6min |
+| 06-search-and-performance | 2 | 11min | 5.5min |
 
 **Recent Trend:**
-- Last 5 plans: 3min, 3min, 3min, 4min, 6min
+- Last 5 plans: 3min, 3min, 4min, 6min, 5min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -89,6 +89,10 @@ Recent decisions affecting current work:
 - [06-01]: Pagefind UI lazy-loaded on first dialog open -- zero JS/WASM until user searches
 - [06-01]: data-pagefind-body on content layouts only -- homepage/listing/utility pages excluded from search
 - [06-01]: Hidden span with data-pagefind-filter="content_type" for search faceting
+- [06-02]: Only preload Thai font (primary) -- over-preloading Inter would hurt performance
+- [06-02]: Vite ?url import for hashed asset path in font preload href
+- [06-02]: Preload placed as first head element for earliest possible browser discovery
+- [06-02]: crossorigin="anonymous" required on font preloads to prevent double download
 
 ### Pending Todos
 
@@ -101,5 +105,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 06-01-PLAN.md -- Pagefind Search Integration
+Stopped at: Completed 06-02-PLAN.md -- Font Preload & Performance Audit (FINAL PLAN)
 Resume file: None
