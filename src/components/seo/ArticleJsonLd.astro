@@ -1,0 +1,71 @@
+---
+import { getCategoryName } from '../../lib/categories';
+import type { CategorySlug } from '../../lib/categories';
+
+interface Props {
+	title: string;
+	description: string;
+	pubDate: Date;
+	lastReviewed: Date;
+	url: string;
+	category: CategorySlug;
+	tags: string[];
+}
+
+const { title, description, pubDate, lastReviewed, url, category, tags } = Astro.props;
+
+const schema = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Article",
+			"headline": title,
+			"description": description,
+			"datePublished": pubDate.toISOString().substring(0, 10),
+			"dateModified": lastReviewed.toISOString().substring(0, 10),
+			"author": {
+				"@type": "Person",
+				"name": "Mingrath Mekavichai",
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "SMEAI",
+				"url": Astro.site?.href,
+			},
+			"mainEntityOfPage": url,
+			"keywords": tags,
+			"inLanguage": "th",
+		},
+		{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "หน้าแรก",
+					"item": new URL("/", Astro.site).href,
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "บทความ",
+					"item": new URL("/articles/", Astro.site).href,
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": getCategoryName(category),
+					"item": new URL(`/articles/category/${category}/`, Astro.site).href,
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": title,
+				},
+			],
+		},
+	],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
