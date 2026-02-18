@@ -1,0 +1,100 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import VideoJsonLd from '../components/seo/VideoJsonLd.astro';
+import YouTubeFacade from '../components/video/YouTubeFacade.astro';
+import CompanionArticleLink from '../components/video/CompanionArticleLink.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	video: CollectionEntry<'videos'>;
+	companionArticle: CollectionEntry<'articles'>;
+	readingTime: number;
+}
+
+const { video, companionArticle, readingTime } = Astro.props;
+const { data } = video;
+
+const pageTitle = data.seoTitle || data.title;
+const videoURL = new URL(Astro.url.pathname, Astro.site).href;
+
+const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
+	year: 'numeric',
+	month: 'short',
+	day: 'numeric',
+});
+---
+
+<BaseLayout
+	title={pageTitle}
+	description={data.description}
+	ogType="video.other"
+	publishedTime={data.pubDate}
+	tags={data.tags}
+>
+	<VideoJsonLd
+		title={data.title}
+		description={data.description}
+		youtubeId={data.youtubeId}
+		pubDate={data.pubDate}
+		duration={data.duration}
+		url={videoURL}
+		tags={data.tags}
+	/>
+
+	<article class="py-12 md:py-16">
+		<div class="prose-container">
+			<!-- Video title -->
+			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight">
+				{data.title}
+			</h1>
+
+			<!-- Meta row: date, reading time -->
+			<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-surface-500 dark:text-surface-400 mb-6">
+				<time datetime={data.pubDate.toISOString()}>
+					{dateFormatted}
+				</time>
+				<span>&middot;</span>
+				<span>{readingTime} นาทีในการอ่าน</span>
+			</div>
+
+			<!-- YouTube embed (facade pattern) -->
+			<div class="mb-8">
+				<YouTubeFacade videoId={data.youtubeId} title={data.title} />
+			</div>
+
+			<!-- Companion article link -->
+			<div class="mb-8">
+				<CompanionArticleLink article={companionArticle} />
+			</div>
+
+			<!-- Prose body (video summary/notes) -->
+			<div class="prose prose-lg dark:prose-invert max-w-none">
+				<slot />
+			</div>
+
+			<!-- Tags -->
+			{data.tags.length > 0 && (
+				<div class="flex flex-wrap gap-2 mt-8">
+					{data.tags.map((tag) => (
+						<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-surface-100 dark:bg-surface-800 text-surface-600 dark:text-surface-400 border border-surface-200 dark:border-surface-700">
+							{tag}
+						</span>
+					))}
+				</div>
+			)}
+
+			<!-- Back to videos link -->
+			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700">
+				<a
+					href="/videos/"
+					class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors"
+				>
+					<svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+					</svg>
+					กลับไปหน้าวิดีโอ
+				</a>
+			</div>
+		</div>
+	</article>
+</BaseLayout>

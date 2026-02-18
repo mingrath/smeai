@@ -1,0 +1,18 @@
+---
+import { YouTube } from 'astro-lazy-youtube-embed';
+
+interface Props {
+	videoId: string;
+	title: string;
+}
+
+const { videoId, title } = Astro.props;
+---
+
+<div class="aspect-video rounded-xl overflow-hidden">
+	<YouTube
+		videoId={videoId}
+		title={title}
+		thumbnailRes="sd"
+	/>
+</div>
