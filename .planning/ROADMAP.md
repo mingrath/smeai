@@ -105,11 +105,11 @@ Plans:
   1. Pagefind search indexes all content at build time and presents results in a search dialog
   2. Search returns relevant results for Thai text queries and mixed Thai-English queries
   3. Lighthouse mobile score is 90+ across all page types (landing, article, listing, contact)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md -- Pagefind Search Integration & Search UI
+- [ ] 06-02-PLAN.md -- Font Preloading & Performance Audit
 
 ## Progress
 
@@ -123,4 +123,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Content System & Articles | 3/3 | ✓ Complete | 2026-02-18 |
 | 4. Project Showcase | 2/2 | ✓ Complete | 2026-02-18 |
 | 5. Video Integration | 2/2 | ✓ Complete | 2026-02-18 |
-| 6. Search & Performance | 0/TBD | Not started | - |
+| 6. Search & Performance | 0/2 | Not started | - |
