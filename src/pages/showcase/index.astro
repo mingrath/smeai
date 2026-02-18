@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/project/ProjectCard.astro';
+
+const projects = await getCollection('projects', ({ data }) => !data.draft);
+const sorted = projects.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="ผลงาน" description="ตัวอย่างโปรเจกต์ AI ที่ช่วยธุรกิจ SME จริง - ผลลัพธ์ที่วัดได้จากโปรเจกต์ที่ผ่านมา">
+  <section class="py-12 md:py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <!-- Page header -->
+      <div class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-3">
+          ผลงาน
+        </h1>
+        <p class="text-lg text-surface-600 dark:text-surface-400">
+          ตัวอย่างโปรเจกต์ AI ที่ช่วยธุรกิจ SME จริง
+        </p>
+      </div>
+
+      <!-- Project grid -->
+      {sorted.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sorted.map((project) => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-surface-500 dark:text-surface-400 text-lg">
+            ยังไม่มีผลงาน
+          </p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>
