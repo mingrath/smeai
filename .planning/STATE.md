@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 3 complete -- Content System & Articles. Ready for Phase 4.
+**Current focus:** Phase 4 in progress -- Project Showcase. Plan 01 complete, Plan 02 next.
 
 ## Current Position
 
-Phase: 3 of 6 (Content System & Articles) -- COMPLETE
-Plan: 3 of 3 in current phase (03-03 complete)
-Status: Phase complete
-Last activity: 2026-02-18 -- Completed 03-03 (Article Listing & Category Browsing)
+Phase: 4 of 6 (Project Showcase)
+Plan: 1 of 2 in current phase (04-01 complete)
+Status: In progress
+Last activity: 2026-02-18 -- Completed 04-01 (Projects Collection & Components)
 
-Progress: [██████░░░░] 58%
+Progress: [██████░░░░] 67%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 3.7min
-- Total execution time: 0.43 hours
+- Total plans completed: 8
+- Average duration: 3.6min
+- Total execution time: 0.48 hours
 
 **By Phase:**
 
@@ -30,9 +30,10 @@ Progress: [██████░░░░] 58%
 | 01-foundation | 2 | 11min | 5.5min |
 | 02-landing-page | 2 | 5min | 2.5min |
 | 03-content-system | 3 | 10min | 3.3min |
+| 04-project-showcase | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 3min, 4min, 4min, 2min
+- Last 5 plans: 4min, 4min, 2min, 3min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -68,6 +69,10 @@ Recent decisions affecting current work:
 - [03-03]: Rest param [...page] for clean /articles/ first page URL (not /articles/1/)
 - [03-03]: Category pages generated for all slugs via flatMap, empty categories show Thai empty state
 - [03-03]: Reading time omitted from article cards for performance (no render() per card)
+- [04-01]: Projects schema includes metric + metricLabel for business impact display
+- [04-01]: Accent colors for industry badges to differentiate from article category badges (primary)
+- [04-01]: CreativeWork JSON-LD type for projects (not Article) with 3-level breadcrumb
+- [04-01]: Thumbnail placeholder uses Heroicons squares-2x2 SVG on primary-100 background
 
 ### Pending Todos
 
@@ -80,5 +85,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 03-03-PLAN.md -- Phase 3 complete, ready for Phase 4
+Stopped at: Completed 04-01-PLAN.md -- Projects collection & components done, ready for 04-02
 Resume file: None
