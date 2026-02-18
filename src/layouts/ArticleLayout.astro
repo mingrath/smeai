@@ -41,25 +41,30 @@ const linkedVideo = article.data.video
 		tags={data.tags}
 	/>
 
-	<article class="py-12 md:py-16">
+	<article class="py-12 md:py-16" data-pagefind-body>
 		<div class="prose-container">
 			<!-- Article title -->
-			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight">
+			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight" data-pagefind-meta="title">
 				{data.title}
 			</h1>
 
+			<!-- Content type filter for search -->
+			<span data-pagefind-filter="content_type" class="hidden">article</span>
+
 			<!-- Meta info (reading time, dates, category, tags) -->
-			<ArticleMeta
-				readingTime={readingTime}
-				pubDate={data.pubDate}
-				lastReviewed={data.lastReviewed}
-				category={data.category}
-				tags={data.tags}
-			/>
+			<div data-pagefind-ignore>
+				<ArticleMeta
+					readingTime={readingTime}
+					pubDate={data.pubDate}
+					lastReviewed={data.lastReviewed}
+					category={data.category}
+					tags={data.tags}
+				/>
+			</div>
 
 			<!-- Video embed (if article has linked video) -->
 			{linkedVideo && (
-				<div class="mb-8">
+				<div class="mb-8" data-pagefind-ignore>
 					<YouTubeFacade videoId={linkedVideo.data.youtubeId} title={linkedVideo.data.title} />
 					<p class="text-sm text-surface-500 dark:text-surface-400 mt-2">
 						ดูวิดีโอประกอบ:{' '}
@@ -71,7 +76,9 @@ const linkedVideo = article.data.video
 			)}
 
 			<!-- Table of Contents -->
-			<TableOfContents headings={headings} />
+			<div data-pagefind-ignore>
+				<TableOfContents headings={headings} />
+			</div>
 
 			<!-- Article body -->
 			<div class="prose prose-lg dark:prose-invert max-w-none">
@@ -79,7 +86,7 @@ const linkedVideo = article.data.video
 			</div>
 
 			<!-- Back to articles link -->
-			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700">
+			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700" data-pagefind-ignore>
 				<a
 					href="/articles/"
 					class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors"

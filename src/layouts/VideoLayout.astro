@@ -41,15 +41,18 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 		tags={data.tags}
 	/>
 
-	<article class="py-12 md:py-16">
+	<article class="py-12 md:py-16" data-pagefind-body>
 		<div class="prose-container">
 			<!-- Video title -->
-			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight">
+			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight" data-pagefind-meta="title">
 				{data.title}
 			</h1>
 
+			<!-- Content type filter for search -->
+			<span data-pagefind-filter="content_type" class="hidden">video</span>
+
 			<!-- Meta row: date, reading time -->
-			<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-surface-500 dark:text-surface-400 mb-6">
+			<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-surface-500 dark:text-surface-400 mb-6" data-pagefind-ignore>
 				<time datetime={data.pubDate.toISOString()}>
 					{dateFormatted}
 				</time>
@@ -58,12 +61,12 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 			</div>
 
 			<!-- YouTube embed (facade pattern) -->
-			<div class="mb-8">
+			<div class="mb-8" data-pagefind-ignore>
 				<YouTubeFacade videoId={data.youtubeId} title={data.title} />
 			</div>
 
 			<!-- Companion article link -->
-			<div class="mb-8">
+			<div class="mb-8" data-pagefind-ignore>
 				<CompanionArticleLink article={companionArticle} />
 			</div>
 
@@ -84,7 +87,7 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 			)}
 
 			<!-- Back to videos link -->
-			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700">
+			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700" data-pagefind-ignore>
 				<a
 					href="/videos/"
 					class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors"

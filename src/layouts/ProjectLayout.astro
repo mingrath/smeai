@@ -37,15 +37,18 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 		tags={data.tags}
 	/>
 
-	<article class="py-12 md:py-16">
+	<article class="py-12 md:py-16" data-pagefind-body>
 		<div class="prose-container">
 			<!-- Project title -->
-			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight">
+			<h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-6 leading-tight" data-pagefind-meta="title">
 				{data.title}
 			</h1>
 
+			<!-- Content type filter for search -->
+			<span data-pagefind-filter="content_type" class="hidden">project</span>
+
 			<!-- Meta row: industry, client, date, reading time -->
-			<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-surface-500 dark:text-surface-400 mb-6">
+			<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-surface-500 dark:text-surface-400 mb-6" data-pagefind-ignore>
 				<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent-100 dark:bg-accent-600/20 text-accent-600 dark:text-accent-300">
 					{data.industry}
 				</span>
@@ -60,7 +63,7 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 			</div>
 
 			<!-- Business metric highlight box -->
-			<div class="rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 p-4 mb-8">
+			<div class="rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 p-4 mb-8" data-pagefind-ignore>
 				<div class="flex items-baseline gap-3">
 					<span class="text-3xl font-bold text-primary-600 dark:text-primary-400">
 						{data.metric}
@@ -88,7 +91,7 @@ const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
 			)}
 
 			<!-- Back to showcase link -->
-			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700">
+			<div class="mt-12 pt-6 border-t border-surface-200 dark:border-surface-700" data-pagefind-ignore>
 				<a
 					href="/showcase/"
 					class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors"
