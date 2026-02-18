@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 4 in progress -- Project Showcase. Plan 01 complete, Plan 02 next.
+**Current focus:** Phase 4 complete -- Project Showcase. Ready for Phase 5.
 
 ## Current Position
 
-Phase: 4 of 6 (Project Showcase)
-Plan: 1 of 2 in current phase (04-01 complete)
-Status: In progress
-Last activity: 2026-02-18 -- Completed 04-01 (Projects Collection & Components)
+Phase: 4 of 6 (Project Showcase) -- COMPLETE
+Plan: 2 of 2 in current phase (04-02 complete)
+Status: Phase complete, ready for Phase 5
+Last activity: 2026-02-18 -- Completed 04-02 (Showcase Pages & Homepage Featured Projects)
 
-Progress: [██████░░░░] 67%
+Progress: [███████░░░] 75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 3.6min
-- Total execution time: 0.48 hours
+- Total plans completed: 9
+- Average duration: 3.4min
+- Total execution time: 0.53 hours
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [██████░░░░] 67%
 | 01-foundation | 2 | 11min | 5.5min |
 | 02-landing-page | 2 | 5min | 2.5min |
 | 03-content-system | 3 | 10min | 3.3min |
-| 04-project-showcase | 1 | 3min | 3min |
+| 04-project-showcase | 2 | 6min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 4min, 2min, 3min
+- Last 5 plans: 4min, 4min, 2min, 3min, 3min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -73,6 +73,10 @@ Recent decisions affecting current work:
 - [04-01]: Accent colors for industry badges to differentiate from article category badges (primary)
 - [04-01]: CreativeWork JSON-LD type for projects (not Article) with 3-level breadcrumb
 - [04-01]: Thumbnail placeholder uses Heroicons squares-2x2 SVG on primary-100 background
+- [04-02]: No TableOfContents for case studies -- shorter format than articles
+- [04-02]: Flat listing (no pagination) for showcase -- portfolio is small
+- [04-02]: FeaturedProjects uses bg-surface-100/900 for alternating section rhythm
+- [04-02]: Conditional render: FeaturedProjects hides entirely when no featured projects exist
 
 ### Pending Todos
 
@@ -85,5 +89,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 04-01-PLAN.md -- Projects collection & components done, ready for 04-02
+Stopped at: Completed 04-02-PLAN.md -- Phase 04 complete, ready for Phase 05
 Resume file: None
