@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ArticleCard from '../../../../components/article/ArticleCard.astro';
+import Pagination from '../../../../components/article/Pagination.astro';
+import { CATEGORIES, getCategoryName } from '../../../../lib/categories';
+import type { CategorySlug } from '../../../../lib/categories';
+import type { GetStaticPathsOptions } from 'astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  const categorySlugs = Object.keys(CATEGORIES) as CategorySlug[];
+
+  return categorySlugs.flatMap((category) => {
+    const filtered = articles
+      .filter((a) => a.data.category === category)
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+    return paginate(filtered, {
+      params: { category },
+      pageSize: 12,
+    });
+  });
+}
+
+const { page } = Astro.props;
+const { category } = Astro.params;
+const categoryName = getCategoryName(category as CategorySlug);
+---
+
+<BaseLayout
+  title={`${categoryName} - บทความ`}
+  description={`บทความเกี่ยวกับ${categoryName}สำหรับ SME ไทย`}
+>
+  <section class="py-12 md:py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <!-- Page header -->
+      <div class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-surface-900 dark:text-surface-100 mb-3">
+          {categoryName}
+        </h1>
+        <p class="text-lg text-surface-600 dark:text-surface-400">
+          บทความในหมวดหมู่ {categoryName}
+        </p>
+      </div>
+
+      <!-- Category filters -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        <a
+          href="/articles/"
+          class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-surface-100 dark:bg-surface-800 text-surface-700 dark:text-surface-300 hover:bg-surface-200 dark:hover:bg-surface-700 border border-surface-200 dark:border-surface-700 transition-colors"
+        >
+          ทั้งหมด
+        </a>
+        {Object.entries(CATEGORIES).map(([slug, name]) => (
+          <a
+            href={`/articles/category/${slug}/`}
+            class:list={[
+              'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
+              slug === category
+                ? 'bg-primary-600 text-white dark:bg-primary-500'
+                : 'bg-surface-100 dark:bg-surface-800 text-surface-700 dark:text-surface-300 hover:bg-surface-200 dark:hover:bg-surface-700 border border-surface-200 dark:border-surface-700',
+            ]}
+          >
+            {name}
+          </a>
+        ))}
+      </div>
+
+      <!-- Article grid -->
+      {page.data.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {page.data.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-surface-500 dark:text-surface-400 text-lg">
+            ยังไม่มีบทความในหมวดนี้
+          </p>
+        </div>
+      )}
+
+      <!-- Pagination -->
+      <Pagination
+        prevUrl={page.url.prev}
+        nextUrl={page.url.next}
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+      />
+    </div>
+  </section>
+</BaseLayout>
