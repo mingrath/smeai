@@ -46,11 +46,11 @@ Plans:
   2. About section tells Ohm's vet-to-AI story with credentials and photo in a relatable (not corporate) tone
   3. Link to existing portfolio website is visible from the landing page
   4. Contact page displays LINE, email, and phone information clearly
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Contact Constants & Contact Page
+- [ ] 02-02-PLAN.md -- Homepage Sections (Hero, About, Services, CTA)
 
 ### Phase 3: Content System & Articles
 **Goal**: Ohm can publish Thai-language articles via Markdown with validated frontmatter, and visitors can browse articles by category, read with a polished experience, and subscribe via RSS
@@ -119,7 +119,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
-| 2. Landing Page & Contact | 0/TBD | Not started | - |
+| 2. Landing Page & Contact | 0/2 | Not started | - |
 | 3. Content System & Articles | 0/TBD | Not started | - |
 | 4. Project Showcase | 0/TBD | Not started | - |
 | 5. Video Integration | 0/TBD | Not started | - |
