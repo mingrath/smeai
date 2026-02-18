@@ -12,7 +12,7 @@ SMEAI delivers a Thai-primary knowledge hub and consulting lead generator for SM
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Site Shell** - Deployable skeleton with layout, Thai typography, mobile-first design, deployment pipeline, and persistent contact links
+- [x] **Phase 1: Foundation & Site Shell** - Deployable skeleton with layout, Thai typography, mobile-first design, deployment pipeline, and persistent contact links
 - [ ] **Phase 2: Landing Page & Contact** - Homepage value proposition, about section, portfolio link, and dedicated contact page
 - [ ] **Phase 3: Content System & Articles** - Full article pipeline with content collections, Zod schema, categories/tags, reading experience, SEO meta, structured data, sitemap, and RSS
 - [ ] **Phase 4: Project Showcase** - Portfolio grid, case study pages with business outcomes, and featured projects on homepage
@@ -34,8 +34,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Project Setup & Design System
-- [ ] 01-02-PLAN.md -- Layout Shell & Deployment
+- [x] 01-01-PLAN.md -- Project Setup & Design System
+- [x] 01-02-PLAN.md -- Layout Shell & Deployment
 
 ### Phase 2: Landing Page & Contact
 **Goal**: A visitor landing on the homepage understands what SMEAI offers within 5 seconds, learns about Ohm's background, and can reach a dedicated contact page
@@ -118,7 +118,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Site Shell | 0/2 | Planned | - |
+| 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
 | 2. Landing Page & Contact | 0/TBD | Not started | - |
 | 3. Content System & Articles | 0/TBD | Not started | - |
 | 4. Project Showcase | 0/TBD | Not started | - |

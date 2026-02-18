@@ -111,9 +111,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | LAND-01 | Phase 2 | Pending |
 | LAND-02 | Phase 2 | Pending |
-| LAND-03 | Phase 1 | Pending |
+| LAND-03 | Phase 1 | Done |
 | LAND-04 | Phase 2 | Pending |
-| LAND-05 | Phase 1 | Pending |
+| LAND-05 | Phase 1 | Done |
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 3 | Pending |
@@ -129,14 +129,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIDE-02 | Phase 5 | Pending |
 | VIDE-03 | Phase 5 | Pending |
 | LEAD-01 | Phase 2 | Pending |
-| LEAD-02 | Phase 1 | Pending |
+| LEAD-02 | Phase 1 | Done |
 | SEO-01 | Phase 3 | Pending |
 | SEO-02 | Phase 3 | Pending |
 | SEO-03 | Phase 3 | Pending |
-| SEO-04 | Phase 1 | Pending |
-| SEO-05 | Phase 1 | Pending |
+| SEO-04 | Phase 1 | Done |
+| SEO-05 | Phase 1 | Done |
 | SEO-06 | Phase 6 | Pending |
-| SEO-07 | Phase 1 | Pending |
+| SEO-07 | Phase 1 | Done |
 | SRCH-01 | Phase 6 | Pending |
 | SRCH-02 | Phase 6 | Pending |
 

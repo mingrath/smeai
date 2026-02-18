@@ -54,7 +54,7 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-- Cloudflare Pages dashboard setup (manual): connect mingrath/smeai repo, set build config, enable Web Analytics
+None.
 
 ### Blockers/Concerns
 
