@@ -62,12 +62,12 @@ Plans:
   3. Every page has proper meta tags (og:locale=th_TH, canonical URLs, Open Graph) and article pages have Article and BreadcrumbList structured data
   4. XML sitemap is auto-generated at build time and includes all published content
   5. RSS feed is available and validates correctly for article subscription
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md -- Content Foundation & Feed Infrastructure
+- [ ] 03-02-PLAN.md -- Article Pages, SEO Enhancement & Layout
+- [ ] 03-03-PLAN.md -- Article Listing & Category Browsing
 
 ### Phase 4: Project Showcase
 **Goal**: Visitors can browse Ohm's AI projects as portfolio cards, read detailed case studies with business outcomes, and see featured projects highlighted on the homepage
@@ -120,7 +120,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Foundation & Site Shell | 2/2 | ✓ Complete | 2026-02-18 |
 | 2. Landing Page & Contact | 2/2 | ✓ Complete | 2026-02-18 |
-| 3. Content System & Articles | 0/TBD | Not started | - |
+| 3. Content System & Articles | 0/3 | In progress | - |
 | 4. Project Showcase | 0/TBD | Not started | - |
 | 5. Video Integration | 0/TBD | Not started | - |
 | 6. Search & Performance | 0/TBD | Not started | - |
