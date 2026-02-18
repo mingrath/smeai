@@ -1,0 +1,56 @@
+---
+interface Props {
+  prevUrl: string | undefined;
+  nextUrl: string | undefined;
+  currentPage: number;
+  lastPage: number;
+}
+
+const { prevUrl, nextUrl, currentPage, lastPage } = Astro.props;
+---
+
+{lastPage > 1 && (
+  <nav aria-label="การแบ่งหน้า" class="flex items-center justify-center gap-4 mt-12">
+    {prevUrl ? (
+      <a
+        href={prevUrl}
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-surface-700 dark:text-surface-300 bg-surface-100 dark:bg-surface-800 hover:bg-surface-200 dark:hover:bg-surface-700 border border-surface-200 dark:border-surface-700 transition-colors"
+      >
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+        ก่อนหน้า
+      </a>
+    ) : (
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-surface-400 dark:text-surface-600 cursor-not-allowed">
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+        ก่อนหน้า
+      </span>
+    )}
+
+    <span class="text-sm text-surface-500 dark:text-surface-400">
+      หน้า {currentPage} จาก {lastPage}
+    </span>
+
+    {nextUrl ? (
+      <a
+        href={nextUrl}
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-surface-700 dark:text-surface-300 bg-surface-100 dark:bg-surface-800 hover:bg-surface-200 dark:hover:bg-surface-700 border border-surface-200 dark:border-surface-700 transition-colors"
+      >
+        ถัดไป
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </a>
+    ) : (
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-surface-400 dark:text-surface-600 cursor-not-allowed">
+        ถัดไป
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+    )}
+  </nav>
+)}

@@ -1,0 +1,61 @@
+---
+import { getCategoryName } from '../../lib/categories';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { data } = article;
+const slug = article.id.split('/').pop()!;
+
+const dateFormatted = data.pubDate.toLocaleDateString('th-TH', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+
+<a
+  href={`/articles/${slug}/`}
+  class="group block rounded-xl bg-surface-100 dark:bg-surface-800/50 border border-surface-200 dark:border-surface-700 hover:border-primary-300 dark:hover:border-primary-600 transition-colors overflow-hidden"
+>
+  <div class="p-5">
+    <!-- Category + Date row -->
+    <div class="flex items-center justify-between gap-2 mb-3">
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300">
+        {getCategoryName(data.category)}
+      </span>
+      <time datetime={data.pubDate.toISOString()} class="text-xs text-surface-400 dark:text-surface-500">
+        {dateFormatted}
+      </time>
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-lg font-semibold text-surface-900 dark:text-surface-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors mb-2 line-clamp-2">
+      {data.title}
+    </h3>
+
+    <!-- Description -->
+    <p class="text-sm text-surface-600 dark:text-surface-400 line-clamp-3 mb-4 leading-relaxed">
+      {data.description}
+    </p>
+
+    <!-- Tags -->
+    {data.tags.length > 0 && (
+      <div class="flex flex-wrap gap-1.5">
+        {data.tags.slice(0, 3).map((tag) => (
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-xs bg-surface-200 dark:bg-surface-700 text-surface-500 dark:text-surface-400">
+            #{tag}
+          </span>
+        ))}
+        {data.tags.length > 3 && (
+          <span class="text-xs text-surface-400 dark:text-surface-500">
+            +{data.tags.length - 3}
+          </span>
+        )}
+      </div>
+    )}
+  </div>
+</a>
