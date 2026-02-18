@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 2 complete -- Landing Page & Contact. Ready for Phase 3.
+**Current focus:** Phase 3 in progress -- Content System & Articles.
 
 ## Current Position
 
-Phase: 2 of 6 (Landing Page & Contact) -- COMPLETE
-Plan: 2 of 2 in current phase (02-02 complete)
-Status: Phase Complete
-Last activity: 2026-02-18 -- Completed 02-02 (Homepage Sections)
+Phase: 3 of 6 (Content System & Articles)
+Plan: 1 of 3 in current phase (03-01 complete)
+Status: Executing
+Last activity: 2026-02-18 -- Completed 03-01 (Content Foundation & Feed Infrastructure)
 
-Progress: [████░░░░░░] 33%
+Progress: [█████░░░░░] 42%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
+- Total plans completed: 5
 - Average duration: 4min
-- Total execution time: 0.27 hours
+- Total execution time: 0.34 hours
 
 **By Phase:**
 
@@ -29,10 +29,11 @@ Progress: [████░░░░░░] 33%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 11min | 5.5min |
 | 02-landing-page | 2 | 5min | 2.5min |
+| 03-content-system | 1 | 4min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 7min, 4min, 2min, 3min
-- Trend: improving
+- Last 5 plans: 4min, 2min, 3min, 4min
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -56,6 +57,10 @@ Recent decisions affecting current work:
 - [02-01]: Phone added to full variant only (compact stays LINE + email for clean header)
 - [02-02]: Hard-coded service cards with inline SVG icons (Astro can't dynamically map string keys to SVGs at build time)
 - [02-02]: Photo placeholder with Thai initials ("โอม") -- ready to swap for real photo with commented-out Image import
+- [03-01]: Content config at src/content.config.ts (Astro 5 location, not src/content/config.ts)
+- [03-01]: Thai word counting via Intl.Segmenter at 200 WPM instead of space-based splitting
+- [03-01]: Article slugs derived from filename via article.id.split('/').pop() for flat URL structure
+- [03-01]: 4 initial categories: ai-basics, tools, case-studies, news
 
 ### Pending Todos
 
@@ -68,5 +73,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 02-02-PLAN.md -- Phase 2 complete (homepage sections), ready for Phase 3
+Stopped at: Completed 03-01-PLAN.md -- Content foundation & feed infrastructure, ready for 03-02
 Resume file: None
