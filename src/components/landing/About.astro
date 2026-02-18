@@ -1,0 +1,50 @@
+---
+// src/components/landing/About.astro
+import { CONTACT } from '../../lib/contact';
+// When photo is available, uncomment:
+// import { Image } from 'astro:assets';
+// import ohmPhoto from '../../assets/images/ohm-profile.jpg';
+---
+<section id="about" class="py-16 md:py-24 bg-surface-100 dark:bg-surface-900">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid md:grid-cols-5 gap-10 md:gap-16 items-center">
+      <!-- Photo placeholder (2 cols) -->
+      <div class="md:col-span-2 flex justify-center">
+        <!-- Placeholder: swap for <Image> when photo is available -->
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center shadow-lg">
+          <span class="text-4xl md:text-5xl font-bold text-primary-600 dark:text-primary-400">โอม</span>
+        </div>
+      </div>
+
+      <!-- Story (3 cols) -->
+      <div class="md:col-span-3">
+        <h2 class="text-2xl md:text-3xl font-bold text-surface-900 dark:text-surface-100 mb-6">
+          จากสัตวแพทย์สู่ที่ปรึกษา AI
+        </h2>
+        <div class="space-y-4 text-surface-700 dark:text-surface-300 leading-relaxed">
+          <p>
+            สวัสดีครับ ผมโอม จบสัตวแพทยศาสตร์จากจุฬาลงกรณ์มหาวิทยาลัย ระหว่างทำงานในคลินิก ผมเริ่มสนใจว่าเทคโนโลยีจะช่วยแก้ปัญหาในชีวิตจริงได้อย่างไร จนค้นพบโลกของ AI และหลงรักมันเลย
+          </p>
+          <p>
+            การเรียนสัตวแพทย์สอนให้ผมคิดเป็นระบบ วิเคราะห์ปัญหา และหาทางออกที่ใช้ได้จริง ผมนำทักษะเหล่านี้มาช่วย SME ไทยวางแผนและเริ่มใช้ AI โดยไม่ต้องมีพื้นฐานด้านเทคโนโลยี
+          </p>
+          <p>
+            ไม่ว่าคุณจะอยากสร้าง Chatbot ตอบลูกค้า วิเคราะห์ข้อมูลการขาย หรือลดงานซ้ำๆ ด้วย AI ผมพร้อมช่วยตั้งแต่เริ่มต้นจนใช้งานได้จริงครับ
+          </p>
+        </div>
+        <a
+          href={CONTACT.portfolio.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 mt-6 text-primary-600 dark:text-primary-400 font-medium hover:underline"
+        >
+          {CONTACT.portfolio.label}
+          <!-- Heroicons: arrow-top-right-on-square -->
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
