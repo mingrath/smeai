@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** SME owners can discover practical, cost-effective AI solutions they can actually use -- and reach Ohm when they need help implementing them.
-**Current focus:** Phase 4 complete -- Project Showcase. Ready for Phase 5.
+**Current focus:** Phase 5 in progress -- Video Integration.
 
 ## Current Position
 
-Phase: 4 of 6 (Project Showcase) -- COMPLETE
-Plan: 2 of 2 in current phase (04-02 complete)
-Status: Phase complete, ready for Phase 5
-Last activity: 2026-02-18 -- Completed 04-02 (Showcase Pages & Homepage Featured Projects)
+Phase: 5 of 6 (Video Integration)
+Plan: 1 of 2 in current phase (05-01 complete)
+Status: Executing Phase 5
+Last activity: 2026-02-18 -- Completed 05-01 (Video Collection & Components)
 
-Progress: [███████░░░] 75%
+Progress: [████████░░] 83%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 3.4min
-- Total execution time: 0.53 hours
+- Total plans completed: 10
+- Average duration: 3.3min
+- Total execution time: 0.58 hours
 
 **By Phase:**
 
@@ -31,9 +31,10 @@ Progress: [███████░░░] 75%
 | 02-landing-page | 2 | 5min | 2.5min |
 | 03-content-system | 3 | 10min | 3.3min |
 | 04-project-showcase | 2 | 6min | 3min |
+| 05-video-integration | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 4min, 2min, 3min, 3min
+- Last 5 plans: 4min, 2min, 3min, 3min, 3min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -77,6 +78,9 @@ Recent decisions affecting current work:
 - [04-02]: Flat listing (no pagination) for showcase -- portfolio is small
 - [04-02]: FeaturedProjects uses bg-surface-100/900 for alternating section rhythm
 - [04-02]: Conditional render: FeaturedProjects hides entirely when no featured projects exist
+- [05-01]: BaseLayout ogType extended to accept video.other for proper Open Graph video type
+- [05-01]: Videos collection uses flat loader (no subdirectories) so video.id is the slug directly
+- [05-01]: thumbnailRes=sd (640px) for YouTube facade to avoid broken maxresdefault on lower-res uploads
 
 ### Pending Todos
 
@@ -89,5 +93,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 04-02-PLAN.md -- Phase 04 complete, ready for Phase 05
+Stopped at: Completed 05-01-PLAN.md -- Video Collection & Components
 Resume file: None
