@@ -17,4 +17,24 @@ const articles = defineCollection({
 	}),
 });
 
-export const collections = { articles };
+const projects = defineCollection({
+	loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		thumbnail: z.string().optional(),
+		thumbnailAlt: z.string().default(""),
+		client: z.string(),
+		industry: z.string(),
+		metric: z.string(),
+		metricLabel: z.string(),
+		tags: z.array(z.string()).default([]),
+		pubDate: z.coerce.date(),
+		featured: z.boolean().default(false),
+		draft: z.boolean().default(false),
+		seoTitle: z.string().optional(),
+		seoKeywords: z.array(z.string()).default([]),
+	}),
+});
+
+export const collections = { articles, projects };
