@@ -91,11 +91,11 @@ Plans:
   1. YouTube videos load using facade pattern (static thumbnail shown first, iframe loads only on click) with no performance penalty on initial page load
   2. Every video entry has a companion written article linked bidirectionally (video page links to article, article embeds or links to video)
   3. Video listing page displays all video content with title, thumbnail, and metadata
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md -- Videos Collection, Seed Content & Reusable Components
+- [ ] 05-02-PLAN.md -- Video Pages, Article Cross-Linking & Navigation
 
 ### Phase 6: Search & Performance
 **Goal**: Visitors can search across all site content in Thai and mixed Thai-English, and the site passes Core Web Vitals thresholds on mobile
